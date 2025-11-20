@@ -1,0 +1,31 @@
+{
+  "name": "react-learning",
+  "version": "1.0.0",
+  "description": "Namaste react course",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Logi257/Namaste-React.git"
+  },
+  "keywords": [],
+  "author": "logesh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Logi257/Namaste-React/issues"
+  },
+  "homepage": "https://github.com/Logi257/Namaste-React#readme",
+  "devDependencies": {
+    "parcel": "^2.16.1"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "browserslist": [
+    "last 2 versions"
+  ]
+}
