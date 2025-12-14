@@ -12,6 +12,7 @@ const ItemList = ({ items }) => {
     <div>
       {items.map((category) => (
         <div
+          data-testid="food-items"
           key={category.categoryId}
           className="p-2 m-2 border-gray-200 border-b-2 text-left"
         >
@@ -37,7 +38,6 @@ const ItemList = ({ items }) => {
                     onClick={(e) => {
                       e.stopPropagation();
                       handleAddItems(item);
-                     
                     }}
                   >
                     Add+

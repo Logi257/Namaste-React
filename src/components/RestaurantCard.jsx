@@ -4,6 +4,8 @@ import UserContext from "../../utils/UserContext";
 
 const RestaurantCard = (props) => {
   const { resData } = props;
+  //console.log(resData);
+
   const { name, cuisines, avgRating, costForTwo, cloudinaryImageId, sla } =
     resData?.info;
 
@@ -11,6 +13,7 @@ const RestaurantCard = (props) => {
 
   return (
     <div
+      data-testid="resCard"
       className="m-4 p-4 w-[270px] rounded-lg bg-gray-100"
       style={{ backgroundColor: "#f0f0f0" }}
     >
@@ -26,7 +29,7 @@ const RestaurantCard = (props) => {
         </div>
 
         <h5>{sla.deliveryTime} Mins</h5>
-        <h4>User: {loggedUser}</h4>
+        {/* <h4>User: {loggedUser}</h4> */}
       </div>
     </div>
   );

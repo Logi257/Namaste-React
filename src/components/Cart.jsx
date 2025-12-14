@@ -24,7 +24,7 @@ const Cart = () => {
           Clear Cart
         </button>
       </div>
-      <div className="w-6/12 m-auto mt-5">
+      <div className="w-6/12 m-auto mt-5" data-testid="cart-items">
         {cartItems.length === 0 ? (
           <Link to="/">
             <button className="p-3 mt-3 bg-green-400 text-white rounded-lg cursor-pointer">

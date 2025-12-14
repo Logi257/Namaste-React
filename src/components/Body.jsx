@@ -1,4 +1,4 @@
-import { useEffect, useState, UserContext, useContext } from "react";
+import { useEffect, useState, useContext } from "react";
 import RestaurantCard from "./RestaurantCard";
 import Shimmer from "./shimmer";
 import { Link } from "react-router-dom";
@@ -13,8 +13,6 @@ const Body = () => {
   const [searchResult, setSearchResult] = useState("");
 
   const { loggedUser, setUserName } = useContext(UserContext);
-
-  console.log(listOfRes);
 
   useEffect(() => {
     fetchData();
@@ -53,6 +51,7 @@ const Body = () => {
       <div className="filter flex m-5 justify-center items-center">
         <div className="search p-4 m-4">
           <input
+            data-testid="input-box"
             className="p-1 border border-solid border-black"
             type="text"
             placeholder="Search Here"

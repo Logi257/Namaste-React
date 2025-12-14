@@ -15,7 +15,7 @@ const Header = () => {
 
   //Subscribing to the store using selector
   const cartItems = useSelector((store) => store.cart.items);
-  console.log(cartItems);
+  // console.log(cartItems);
 
   return (
     <header className="flex justify-between items-center m-3 outline-2 shadow-xl">
@@ -32,11 +32,11 @@ const Header = () => {
               Home
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link to="/about" className="nav-links">
               About Us
             </Link>
-          </li>
+          </li> */}
           <li>
             <Link to="/contact" className="nav-links">
               Contact Us
@@ -52,14 +52,14 @@ const Header = () => {
             <Link to="/cart">Cart ({cartItems.length} items)</Link>
           </li>
           <li className="nav-links">{loggedUser}</li>
-          {/* <button
+           <button
             className="login"
             onClick={() => {
               btnName === "Login" ? setBtnName("Logout") : setBtnName("Login");
             }}
           >
             {btnName}
-          </button> */}
+          </button> 
         </ul>
       </nav>
     </header>

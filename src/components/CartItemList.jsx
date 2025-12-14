@@ -4,7 +4,10 @@ const CartItemList = ({ items }) => {
   return (
     <div>
       {items.map((item) => (
-        <div key={item.card.info.id} className="flex justify-between p-2 border-b">
+        <div
+          key={item.card.info.id}
+          className="flex justify-between p-2 border-b"
+        >
           <div>
             <img
               src={IMG_URL + item.card.info.imageId}
@@ -13,7 +16,7 @@ const CartItemList = ({ items }) => {
           </div>
 
           <h3 className="font-bold">{item.card.info.name}</h3>
-          
+
           <p className="text-right">
             ₹{item.card.info.price / 100 || item.card.info.defaultPrice / 100}
           </p>
